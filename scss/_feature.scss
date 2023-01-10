@@ -1,0 +1,57 @@
+.feature{
+    &-section{
+        display: flex;
+        max-width: 1273px;
+        margin-bottom: 26.6rem;
+    }
+    &-image{
+        width: 100%;
+    }
+    &-main{
+        display: block;
+        text-align: left;
+        margin-left: 14.2rem;
+    }
+    &-extra{
+        margin-right: 14.2rem; 
+    }
+    &-heading{
+        font-size: 3.6rem;
+        padding-bottom: 6rem;
+        font-family: $font;
+        max-Width:35.0rem;
+        line-height: 5.8rem;
+        position: relative;
+        &::after{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            border: 1px solid black;
+            width: 5.6rem;
+            top: 75%;
+            left: 0;
+            border-radius: .6rem;
+        }
+
+    }
+    &-text{
+        margin-bottom: 4rem;
+    }
+    &-button{
+        position: relative;
+        max-width: 20rem;
+        height: 5.6rem;
+    }
+}
+
+.button--feature{
+    position: relative;
+    &-image{
+        position: absolute;
+        right: 30%;
+        transform: translateX(-30%);
+        top: 0%;
+    }
+}
+
+// button--feature-image

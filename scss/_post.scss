@@ -1,0 +1,93 @@
+.post{
+    &-image{
+        position: absolute;
+        right: 0;
+    }
+    &-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: $font;
+    }
+    &-heading{
+        padding-bottom: 12rem;
+        text-align: center;
+        font-size: 3.6rem;
+        line-height: 5.6rem;
+        font-weight: 700;
+    }
+    &-active{
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        
+    }
+    &-list{
+        display: flex;
+        box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);;
+        max-width: 35rem;
+        height: 51rem;
+        border-radius: 2rem;
+        overflow: hidden;
+        margin-bottom: 7rem;
+        background-color: #fff;
+        
+    }
+
+    &-button{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin:  0 auto;
+        font-size: 1.8rem;
+        line-height: 6rem;
+        font-weight: 700;
+        margin-bottom: 24rem;
+    }
+    
+}
+
+.main-img{
+    position: absolute;
+    margin-left: -3.3%;
+    margin-top: -3%;
+    height: 13rem;
+    max-width: 13rem;
+    z-index: -1;
+}
+
+.list-image{
+    padding-bottom: 3rem;
+    display: block;
+}
+
+.list{
+    &-main{
+        padding-left: 3.3rem;
+        display: flex;
+        flex-direction: column;
+    }
+    &-heading{
+        padding-bottom: 1.2rem;
+        font-size: 2.1rem;
+        font-weight: 700;
+        line-height: 3.2rem;
+        max-width: 25rem;
+    }
+    &-text{
+        padding-bottom: 2.5rem;
+        font-size: 1.6rem;
+    }
+    &-directional{
+        font-family: $font;
+        color: $primary-color;
+        font-size: 1.7rem;
+        line-height: 3.8rem;
+        position: relative;
+        .directional-img{
+            position: absolute;
+            width: 1.5rem;
+            height: 1rem;
+            top: 39%;
+            left: 35%;
+        }
+    }
+
+}

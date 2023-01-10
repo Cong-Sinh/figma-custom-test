@@ -1,0 +1,59 @@
+.footer{
+    height: 432px;
+    background: linear-gradient(183.41deg, #587BA9 -8.57%, #5A98F2 82.96%);
+    color: #fff;
+    font-family: $font;
+    &-container{
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        
+    }
+
+    &-text{
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 4rem;
+        max-width: 40rem;
+    }
+
+    &-heading{
+        padding-bottom: 2rem;
+        padding-top: 9.1rem;
+        font-size: 2.4rem;
+        line-height: 3rem;
+        font-weight: 700;
+    }
+
+    &-headings{   
+         margin-left: 7rem;
+        font-size: 2.4rem;
+        line-height: 49px;
+    
+    }
+
+    &-image{
+        width: 4.5rem;
+        height: 3.1rem;
+        padding-top: 9.1rem;
+        .logo{
+            border-radius: 100px;
+        }
+    }
+
+    &-main{
+        padding-left: 19rem;
+        padding-bottom: 1rem;
+    }
+
+    &-end{
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        line-height: 3.8rem;
+        font-weight: 300;
+    }
+
+    &-extra{
+        padding-left: 19rem;
+    }
+}

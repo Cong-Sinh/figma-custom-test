@@ -1,0 +1,102 @@
+.intro{
+    &-header{
+        padding-bottom: 8rem;
+    }
+
+    .container{
+        .button--uotline{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            margin-bottom: 27.9rem;
+        }
+    }
+    &-heading{
+        max-width: 555px;
+        margin: 0 auto 60px;
+        text-align: center;
+        position: relative;
+        font-size: 3.6rem;
+        font-family: $font;
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 5.5rem;
+            width: 5.6rem;
+            right: 50%;
+            transform: translateX(50%);
+            align-items: center;
+            border: 1px solid $heading-color;
+            border-radius: 1rem;
+        }
+    }
+    &-text{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    &-img{
+        position: absolute;
+    }
+
+    
+
+    .services{
+        max-width: 1500px;
+        padding-bottom: 7rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        &-heading{
+            font-family: $font;
+            font-size: 2.4rem;
+            line-height: 5.6rem;
+        }
+        &-image{
+           margin: 5.4rem 0 2.3rem 3.7rem;
+           background: linear-gradient(115.99deg, #B0F4FF 23.06%);
+           height: 85px;
+        }
+        .services-content{
+            margin-left: 3.7rem;
+            float: left;
+        }
+
+
+        &-text{
+            
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            bottom: 74.92%;
+            max-width: 26.6rem;
+
+        }
+        &-list{
+            margin: 2.7rem 1.7rem;
+            align-items: center;
+            box-shadow: 10px 2rem 2rem rgba(205, 205, 209, 0.6);
+            border: 1px solid transparent;
+            border-radius: 2rem;
+            background-color: #fff;
+            max-width: 350px;
+            height: 354px;
+            left: 345px;
+            top: 1165px;
+            z-index: 10;
+
+        }
+    }
+
+    @media screen and (max-width: 1023.98px) {
+        .services{
+            &-heading{
+                line-height: 3.5rem;
+              }
+              &-content{
+                margin-left: 1rem !important;
+              }
+        }
+    }
+    
+}

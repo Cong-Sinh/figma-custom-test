@@ -1,0 +1,94 @@
+.feedback{
+    position: relative;
+    &-container{
+        color: white;
+        background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+        border-radius: 24px;
+        max-width: 112rem;
+        height: 42.5rem;
+        font-family: $font;
+        margin-bottom: 4.2rem;
+    }
+    &-prototype{
+        display: flex;
+        justify-content: space-around;
+    }
+    &-img{
+        position: absolute;
+        max-width: 13.1rem;
+        margin-left: -50px;
+        margin-top: 19%;
+        height: 13rem;
+        z-index: -1;
+    }
+    &-use{
+        display: flex;
+
+    }
+    &-text{
+        font-size: 1.9rem;
+        line-height: 3rem;
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 42rem;
+        font-weight: 400;
+    }
+
+    &-heading{
+        padding: 6.4rem 20rem 11rem;
+        text-align: center;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        color: #FFFFFF;
+        position: relative;
+        &::after{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            border: 2px solid #FFFFFF;
+            width: 5.6rem;
+            top: 60%;
+            right: 46%;
+            transform: translateX(-46.5%);
+            background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+            border-radius: 24px;
+        }
+    }
+}
+
+    .use{
+        &-heading{
+            font-size: 2.2rem;
+            line-height: 4.8rem;
+        }
+        &-main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 3rem;
+        }
+
+        &-text{
+            color: rgba(255, 255, 255, 0.9);
+        }
+    }
+
+    .arrow{
+        padding-bottom: 21.6rem;
+        &-list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin:  0 auto;
+            max-width: 33.6rem;
+        }
+        &-item{
+            cursor: pointer;
+        }
+        &-main{
+            width: 3.1rem;
+            height: 2rem;
+        }
+    }
