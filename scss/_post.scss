@@ -2,11 +2,20 @@
     &-image{
         position: absolute;
         right: 0;
+        z-index: -1;
     }
+
+    $--column: 3;
     &-main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat($--column, 1fr);
     font-family: $font;
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(1, 1fr);
+        .post-list{
+            margin: 15px auto;
+        }
+    }
     }
     &-heading{
         padding-bottom: 12rem;
@@ -41,6 +50,15 @@
         font-weight: 700;
         margin-bottom: 24rem;
     }
+
+    
+    @media screen and (max-width: 1024px) {
+    &-button{
+        margin: 8rem auto 10rem auto;
+
+    }
+    }
+    
     
 }
 

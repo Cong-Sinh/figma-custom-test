@@ -1,11 +1,11 @@
 .footer{
-    height: 432px;
+    height: 100%;
     background: linear-gradient(183.41deg, #587BA9 -8.57%, #5A98F2 82.96%);
     color: #fff;
     font-family: $font;
     &-container{
         display: grid;
-        grid-template-columns: 3fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 5fr);
         
     }
 
@@ -41,7 +41,7 @@
     }
 
     &-main{
-        padding-left: 19rem;
+        padding-left: 3rem;
         padding-bottom: 1rem;
     }
 
@@ -54,6 +54,34 @@
     }
 
     &-extra{
-        padding-left: 19rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
+
+    @media screen and (max-width: 1023.98px) {
+        height: 100%;
+    &-main{
+        padding-left: 1rem;
+        padding-right: 11rem;
+        padding-bottom: 1rem;
+    }
+
+    &-extra{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    &-end{
+        text-align: center;
+    }
+    }
+
+    @media screen and (max-width: 767px) { 
+        &-container{
+            text-align: center;
+            grid-template-columns: repeat(1, 4fr);
+        }
+    }
+    
+    
 }
