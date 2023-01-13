@@ -88,16 +88,14 @@ ul, li {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 0;
     right: 0;
     z-index: 9;
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0 0.8rem 2.4rem;
-    width: 100%;
+    width: 70%;
     flex-direction: column;
     transform: translateX(120%);
     opacity: 0;
-    visibility: hidden;
     padding-top: 30%;
     transition: all 0.2s linear;
     z-index: 100;
@@ -110,10 +108,41 @@ ul, li {
   .header .menu-bar {
     display: inline-block !important;
   }
-  .header .menu-bar:checked {
-    display: block;
-    transform: translatex(0);
+  .header .menu .menu-item {
+    width: 17rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+    border: 1px solid transparent;
+    /* padding-bottom: 2rem; */
+    background-color: #93d1eb;
+    align-items: center;
+    text-align: center;
+    /* margin: 0 auto; */
+    display: grid;
+    color: white;
+    border-radius: 1.2rem;
+  }
+  .header .menu .menu-link {
+    color: white;
+  }
+  .header .nav-bars-btn {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+  }
+  .header .header-moblie-close {
+    position: relative;
+    width: 2.5rem;
+    top: -10rem;
+    left: -10rem;
+  }
+  .header .nav__input:checked ~ .header-moblie-close {
+    transform: translateX(120%);
+  }
+  .header .nav__input:checked ~ .menu {
     opacity: 1;
+    transform: translateX(0%);
+    background-color: aliceblue;
   }
 }
 
